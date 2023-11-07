@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class="background"></div>
+    <form action="#">
+        <span class="container">
+            <h2>Payment Gateway</h2>
+            <h3>Select Payment Method</h3>
+        <div class="payment">
+            <div class="method">
+                <input type="radio" name="payment_method" id="pay" value="pay">
+                <label for="payment"><i class="fa fa-mobile-phone"></i>UPI</label>
+            </div>
+
+            <div class="payment-method">
+                <input type="radio" name="payment-method" id="credit-card" value="credit-card">
+                <label for="credit-card"><i class="fa-solid fa-credit-card"></i> Credit Card/Debit Card</label>
+            </div>
+        </div>
+
+        <div id="upiId" style="display: none;">
+            <input type="text" name="upiid" placeholder="Enter Your UPI Id"></input>
+        </div>
+
+        <div id="cardDet" style="display: none;">
+            <input type="text" name="cardNum" placeholder="Enter Card Number">
+            <input type="text" name="expDate" placeholder="Enter Expiration Date">
+            <input type="text" name="cvv" placeholder="Enter CVV">
+        </div>
+        <div class="amt">
+        <input type="number" name="billAmt" placeholder="Enter Paying Amount">
+    </div>
+        <button type="submit" value="Pay">
+            <span class="btn">Pay</span>
+        </span>
+    </form>
+    <script src='script.js'></script>
+</body>
+
+</html>
