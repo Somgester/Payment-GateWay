@@ -16,10 +16,9 @@
             <h3>Select Payment Method</h3>
         <div class="payment">
             <div class="method">
-                <input type="radio" name="payment_method" id="pay" value="pay">
+                <input type="radio"  onclick="upi()"  name="payment_method" id="pay" value="pay">
                 <label for="payment"><i class="fa fa-mobile-phone"></i>UPI</label>
             </div>
-
             <div class="payment-method">
                 <input type="radio" name="payment-method" id="credit-card" value="credit-card">
                 <label for="credit-card"><i class="fa-solid fa-credit-card"></i> Credit Card/Debit Card</label>
@@ -36,9 +35,9 @@
             <input type="text" name="cvv" placeholder="Enter CVV">
         </div>
         <div class="amt">
-        <input type="number" name="billAmt" placeholder="Enter Paying Amount">
+        <input type="number" id="billAmt" placeholder="Enter Paying Amount" required>
     </div>
-        <button type="submit" value="Pay">
+        <button type="submit" value="Pay" onclick="paid()">
             <span class="btn">Pay</span>
         </span>
     </form>
